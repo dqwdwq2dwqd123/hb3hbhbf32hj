@@ -112,3 +112,22 @@ header p {
   padding: 0.4rem 0;
   color: #7a003c;
 }
+/* Make selection SUPER obvious */
+.cell.selected {
+  background: rgba(255, 159, 201, 0.85);
+  color: white;
+  transform: scale(1.06);
+  outline: 3px solid rgba(179, 0, 94, 0.35);
+  box-shadow: 0 8px 18px rgba(255, 159, 201, 0.45);
+}
+
+/* Found words stay locked in */
+.cell.found {
+  background: #ff6fb3;
+  color: white;
+  outline: 3px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 24px rgba(255, 111, 179, 0.4);
+  transform: scale(1.03);
+}
+.cell.selected { background: rgba(255,159,201,.85); color: #fff; }
+.cell.found { background: #ff6fb3; color: #fff; }
